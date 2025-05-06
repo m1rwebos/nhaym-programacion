@@ -1,0 +1,23 @@
+# tangamandapio=0
+#  credito=0
+
+# print("cuanta cantidad de ingresos generas ?")
+# print("A.-500.000 a 1.000.000")
+# print("B.-1.000.000 a 1.500.000")
+# print("C.-1.500.001 o mas")
+# ingresos=input()
+# print("nivel de educacion")
+# print("1.-basica x 1.0 , 2.-media x 1.3 o 3.-superior x 1.5")
+# estudios=input()
+
+# credito=0
+# print("elija su rango de ingresos")
+# print(...
+#      1.- _ 
+
+
+
+#     )
+
+
+# op=int(input())
