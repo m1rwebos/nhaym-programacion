@@ -67,15 +67,26 @@
 
 
 
-suma=0
-promedio=0
-print("ingrese cantidad de alumnos")
-alumnos=int(input())
+# suma=0
+# promedio=0
+# print("ingrese cantidad de alumnos")
+# alumnos=int(input())
 
-for a in range (alumnos):
-    notas=float (print(F"ingresa cuantas notas tiene el alumno", a+1))
+# for a in range (alumnos):
+#     notas=float (print(F"ingresa cuantas notas tiene el alumno", a+1))
     
-    
+# import random, time 
+
+# while True:
+#     try:
+#         perros=int(input("cuantos perros van a la caza ?"))
+#         while perros<1:
+#             print("solo valores enteros positivos")
+#         cueota=3
+#         pCumplen=0
+#         for p in range (perros):
+#             time.sleep(1)
+
 
    
 
