@@ -17,11 +17,23 @@
 
 
 
+usuario1= None
+usuario2=None
+usuario3=None
+contraseña1= None
+contraseña2=None
+contraseña3= None
 
 
-
-
-
+def inicio_sesion():
+    if usuario1==None and usuario2==None and usuario3==None:
+        print("Debe tener al menos un usuario")
+    else:
+        user=input("ingrese su usuario")
+        passw=input("ingresa su contraseña")
+        if (user==usuario1 and passw==contraseña1) or (user==usuario2 and passw==contraseña2) or (user==usuario3 and passw==contraseña3):
+            op=int(input())
+     
 
 
 
