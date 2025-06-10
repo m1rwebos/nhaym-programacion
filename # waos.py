@@ -35,28 +35,64 @@
 #             op=int(input())
      
 
-Productos=0
+# Productos=0
 
 
-def Menu_ese():
- while True:
+# def Menu_ese():
+#  while True:
+#     print('''
+#      elige la wea 
+#      1.- Agregar un producto
+#      2.-eliminar producto
+#      3.-mostrar producto
+#      4.-salir
+#           ''')
+# op=int
+
+# nombres=[]
+# apellidos=[]
+# while True:
+#     print('''
+#          1.-Insertar Nombre y apelido
+#          2.-Mostrar Nombres y apellidos 
+#          3.-Buscar nombre
+#          4.-Salir
+#            ''')
+#     op=int(input("seleccione una opcion"))
+#     match op:
+        
+#         case 1:
+#             nom=input("ingresar nombre:")
+#             nombres.append(nom)
+#             ape=input("ingrese un apellido :")
+#             apellidos.append(ape)
+#             print(apellidos)
+#          case 2:
+#             c=0
+#             for n in nombres:
+#                 print(nombres[c], apellidos [c])
+#                 c+=1
+#          case 3:
+
+
+productos=[]
+precios=[]
+carritoDeSuper=[]
+articulos=0
+
+
+while True:
     print('''
-     elige la wea 
-     1.- Agregar un producto
-     2.-eliminar producto
-     3.-mostrar producto
-     4.-salir
+     1.- Ingresar productos     
+     2.- Comprar
+     3.- Crear boleta
+     4.- Salir     
           ''')
-op=int
 
-
-
-
-
-
-
-
-
+    op=int(input("seleccione una opcion"))
+    match op:
+        case 1:
+            nom=input("ingrese un productos")
 
 
 
