@@ -75,24 +75,98 @@
 #          case 3:
 
 
-productos=[]
-precios=[]
-carritoDeSuper=[]
-articulos=0
+# productos=[]
+# precios=[]
+# carritoDeSuper=[]
+# articulos=0
 
 
-while True:
+# while True:
+#     print('''
+#      1.- Ingresar productos     
+#      2.- Comprar
+#      3.- Crear boleta
+#      4.- Salir     
+#           ''')
+
+#     op=int(input("seleccione una opcion"))
+#     match op:
+#         case 1:
+#             nom=input("ingrese un productos")
+
+notas=[7.0,4.6,4.9, 7.0,5.6]
+
+while True :
     print('''
-     1.- Ingresar productos     
-     2.- Comprar
-     3.- Crear boleta
-     4.- Salir     
-          ''')
+     1.- ingresar Nota
+     2.- Borrar nota
+     3.- Mostrar notas
+     4.-Sacar promedio, nota mayor y norta menor
+     5.- Limpiar las notas
+     6.- salir
 
-    op=int(input("seleccione una opcion"))
+     ''')
+    op=int(input("Seleccione una opcion : "))
     match op:
         case 1:
-            nom=input("ingrese un productos")
+            nta=float(input("Ingrese notanota"))
+            notas.append(nta)
+        case 2:
+            for i, nota in enumerate (notas) :
+                print(i+1,".-", nota )
+            borrar=int(input("seleccione la nota a borrar"))
+            notas.pop(borrar-1)
+        case 3:
+             print(notas)
+        case 4 :
+            if (notas)==0:
+              print("no hay notas para evaluar")
+            else:
+              promedio= sum (notas) / len(notas)
+              print(f"el promedio de notas es:",promedio)
+              print("la nota mayor es",max(notas))
+              print("la nota menos es",min(notas))   
+        case 5 :
+           notas.clear()
+        case 6 :
+            print("xao")
+            break
+        case _:
+            print("ingrea algo que este ahi , weon")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
