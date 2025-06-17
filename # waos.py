@@ -94,51 +94,78 @@
 #         case 1:
 #             nom=input("ingrese un productos")
 
-notas=[7.0,4.6,4.9, 7.0,5.6]
+# notas=[7.0,4.6,4.9, 7.0,5.6]
 
-while True :
-    print('''
-     1.- ingresar Nota
-     2.- Borrar nota
-     3.- Mostrar notas
-     4.-Sacar promedio, nota mayor y norta menor
-     5.- Limpiar las notas
-     6.- salir
+# while True :
+#     print('''
+#      1.- ingresar Nota
+#      2.- Borrar nota
+#      3.- Mostrar notas
+#      4.-Sacar promedio, nota mayor y norta menor
+#      5.- Limpiar las notas
+#      6.- salir
 
-     ''')
-    op=int(input("Seleccione una opcion : "))
-    match op:
-        case 1:
-            nta=float(input("Ingrese notanota"))
-            notas.append(nta)
-        case 2:
-            for i, nota in enumerate (notas) :
-                print(i+1,".-", nota )
-            borrar=int(input("seleccione la nota a borrar"))
-            notas.pop(borrar-1)
-        case 3:
-             print(notas)
-        case 4 :
-            if (notas)==0:
-              print("no hay notas para evaluar")
-            else:
-              promedio= sum (notas) / len(notas)
-              print(f"el promedio de notas es:",promedio)
-              print("la nota mayor es",max(notas))
-              print("la nota menos es",min(notas))   
-        case 5 :
-           notas.clear()
-        case 6 :
-            print("xao")
-            break
-        case _:
-            print("ingrea algo que este ahi , weon")
-
-
+#      ''')
+#     op=int(input("Seleccione una opcion : "))
+#     match op:
+#         case 1:
+#             nta=float(input("Ingrese notanota"))
+#             notas.append(nta)
+#         case 2:
+#             for i, nota in enumerate (notas) :
+#                 print(i+1,".-", nota )
+#             borrar=int(input("seleccione la nota a borrar"))
+#             notas.pop(borrar-1)
+#         case 3:
+#              print(notas)
+#         case 4 :
+#             if (notas)==0:
+#               print("no hay notas para evaluar")
+#             else:
+#               promedio= sum (notas) / len(notas)
+#               print(f"el promedio de notas es:",promedio)
+#               print("la nota mayor es",max(notas))
+#               print("la nota menos es",min(notas))   
+#         case 5 :
+#            notas.clear()
+#         case 6 :
+#             print("xao")
+#             break
+#         case _:
+#             print("ingrea algo que este ahi , weon")
 
 
 
 
+
+
+productos=[
+    {"nombre" : "lapiz" , "precio" : 500},
+    {"nombre" : "goma", "precio" : 150}
+
+]
+while True:
+   try:
+      
+        print('''
+            1.-Agregar articulo
+            2.-Borrar atriculo 
+            3.-Actualizar articulo
+            4.-Mostrar listado de articulos
+            5.-Salir
+             
+            ''')
+        op=int(input("seleccione algo"))
+        match op:
+            case 1:
+                nombre=input("nombre del articulo")
+                valor=int(input("precio del articulo"))
+                productos.append({"nombre" : nombre, "precio" :valor })
+            case 2:
+                for n,producto in enumerate(productos):
+                    print(n+1, producto["nombre", producto["precio"]])
+                borrar=int(input("que producto desea elimiar ?"))
+                productos.pop(borrar-1)
 
 
 
